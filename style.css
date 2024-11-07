@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+
+    /* Colors */
+    --slate-900: #1F314F;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF;
+
+    /* Typography */
+    --head: 22px;
+    --par: 15px;
+
+    /* Spacing */
+    --l: 40px;
+    --m: 24px;
+    --sm: 16px; 
+}
+
+.heading{
+    font-size: var(--head);
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: var(--slate-900);
+}
+
+.paragraph{
+    font-size: var(--par);
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: var(--slate-500);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--slate-300);
+    font-family: "Outfit", sans-serif;
+}
+
+article{
+    width: 320px;
+    height: 499px;
+    background: white;
+    border-radius: 20px;
+    
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--sm);
+    gap: var(--m);
+}
+
+.card-content img{
+    border-radius: 10px;
+}
+
+.text{
+    text-align: center;
+    padding: 0 var(--sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
+
+.attribution{
+    position: absolute;
+    bottom: var(--sm);
+    text-align: center;
+    
+}
+
